@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0df280;
+  --background-light: #f5f8f7;
+  --background-dark: #000000;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--background-dark);
+}
+
+.neon-border {
+  box-shadow: 0 0 10px rgba(13, 242, 128, 0.3), inset 0 0 5px rgba(13, 242, 128, 0.2);
+  border: 1px solid rgba(13, 242, 128, 0.5);
+}
+
+.neon-glow-primary {
+  box-shadow: 0 0 20px rgba(13, 242, 128, 0.6);
+}
+
+.shiny-white {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.grid-bg {
+  background-image: linear-gradient(rgba(13, 242, 128, 0.05) 1px, transparent 1px),
+                    linear-gradient(90px, rgba(13, 242, 128, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  perspective: 1000px;
+}
+
+.grid-floor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background-image: 
+    linear-gradient(to bottom, transparent, #000),
+    linear-gradient(rgba(13, 242, 128, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 242, 128, 0.15) 1px, transparent 1px);
+  background-size: 100% 100%, 50px 50px, 50px 50px;
+  transform: rotateX(60deg);
+  transform-origin: bottom;
+  z-index: 0;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at center, #0a1a0f 0%, #000000 70%);
+}

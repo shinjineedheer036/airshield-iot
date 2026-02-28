@@ -1,0 +1,61 @@
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
+const Signup = () => {
+  return (
+    <div className="min-h-screen bg-background-dark flex flex-col">
+      <Navbar />
+      <main className="flex-grow flex items-center justify-center pt-20">
+        <div className="max-w-md w-full px-6 py-12 rounded-xl bg-primary/5 border border-primary/20 backdrop-blur-md">
+          <h2 className="text-3xl font-black text-white shiny-white mb-8 text-center italic">Deploy AirShield</h2>
+          <form className="space-y-6">
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs font-bold text-primary uppercase tracking-widest mb-2">First Name</label>
+                <input 
+                  type="text" 
+                  className="w-full px-4 py-3 rounded-lg bg-black/50 border border-primary/20 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                  placeholder="John"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-primary uppercase tracking-widest mb-2">Last Name</label>
+                <input 
+                  type="text" 
+                  className="w-full px-4 py-3 rounded-lg bg-black/50 border border-primary/20 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                  placeholder="Doe"
+                />
+              </div>
+            </div>
+            <div>
+              <label className="block text-xs font-bold text-primary uppercase tracking-widest mb-2">Email Address</label>
+              <input 
+                type="email" 
+                className="w-full px-4 py-3 rounded-lg bg-black/50 border border-primary/20 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                placeholder="john@company.com"
+              />
+            </div>
+            <div>
+              <label className="block text-xs font-bold text-primary uppercase tracking-widest mb-2">Password</label>
+              <input 
+                type="password" 
+                className="w-full px-4 py-3 rounded-lg bg-black/50 border border-primary/20 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                placeholder="••••••••"
+              />
+            </div>
+            <button className="w-full py-4 bg-primary text-black font-black uppercase tracking-wider rounded-lg neon-glow-primary hover:scale-105 transition-transform">
+              Initialize Deployment
+            </button>
+          </form>
+          <p className="mt-8 text-center text-slate-500 text-sm">
+            Already have an account? <a href="/login" className="text-primary hover:underline">Sign In</a>
+          </p>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Signup;
