@@ -48,3 +48,5 @@ Frontend/
 - **Background:** `#000000` (Deep Black)
 - **Typography:** Space Grotesk
 - **Icons:** Material Symbols Outlined
+Maintained by Shinjinee Dheer
+
